@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цікава гра</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="holder">
+        <form id="player1" class="player-section">
+            <h2>Ви</h2>
+            <input disabled type="number" name="player1Bet" id="player1Bet" readonly>
+        </form>
+        <div class="score">
+            <h3>Рахунок</h3>
+            <div class="score-line">
+                <h4>Ви:</h4>
+                <input disabled type="number" name="player1Score" id="player1Score" readonly>
+            </div>
+            <button type="button" name="player1Turn" id="player1Turn" class="generate-button">Генерувати!</button>
+            <div class="score-line">
+                <h4>Олег:</h4>
+                <input disabled type="number" name="player2Score" id="player2Score" readonly>
+            </div>
+        </div>
+        <form id="player2" class="player-section">
+            <h2>Олег</h2>
+            <input disabled type="number" name="player2Bet" id="player2Bet">
+        </form>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
